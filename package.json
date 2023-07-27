@@ -1,0 +1,24 @@
+{
+  "name": "simple-edge-runtime",
+  "version": "1.0.0",
+  "description": "A simple chat server that uses OpenAI's GPT-3 to generate responses.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "@vercel/node": "^2.15.1",
+    "ai": "^2.1.26",
+    "openai-edge": "^1.0.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.8",
+    "@types/node": "^20.1.5",
+    "present": "^1.0.0"
+  }
+}
