@@ -38,6 +38,10 @@ export default async (req: Request, response: Response) => {
       }
     })
 
+    req.signal.addEventListener('abort', () => {
+      console.log('Aborted')
+    })
+
     return new StreamingTextResponse(stream)
   } catch (e: any) {
     console.error(e)
